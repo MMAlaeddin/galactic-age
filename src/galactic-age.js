@@ -8,4 +8,9 @@ export class Age {
       return true
     }
   }
+  parseAge() {
+    if(isNaN(this.earthAge)) {
+      return false
+    }
+  }
 }
