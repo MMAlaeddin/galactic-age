@@ -7,8 +7,8 @@ describe("Age", () => {
     expect(age.checkAgeInput()).toEqual(true)
   });
 
-  test("this should confirm input does not take string input", () => {
-    let age = new Age("hello")
-    expect(age.parseAge()).toEqual(false)
+  test("this should confirm input age is parseInt", () => {
+    let age = new Age(40)
+    expect(age.parseAge()).toEqual(40)
   })
 })

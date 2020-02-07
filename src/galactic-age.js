@@ -9,8 +9,7 @@ export class Age {
     }
   }
   parseAge() {
-    if(isNaN(this.earthAge)) {
-      return false
+    let ageInput = parseInt(this.earthAge)
+    return ageInput
     }
   }
-}
