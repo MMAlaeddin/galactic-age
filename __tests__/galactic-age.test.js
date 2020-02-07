@@ -24,6 +24,6 @@ describe("Age", () => {
 
   test("this should calculate and return how old user is on Mars", () => {
     let age = new Age(40)
-    expect(age.marsYears()).toEqual(21.2)
+    expect(age.marsYears()).toEqual(21)
   })
 })
