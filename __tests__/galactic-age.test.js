@@ -40,19 +40,11 @@ describe("Age", () => {
   test("this should confirm users input if they do not exercise", () => {
     let age = new Age(40, "no")
     expect(age.exerciseInput()).toEqual(40)
+  });
+
+  test("this should show how long user will live on Mercury if they exercise", () => {
+    let age = new Age(40, "yes")
+    expect(age.exerMerc()).toEqual(45)
   })
   })
 
-
-//   test("this should confirm female input", () => {
-//     let age = new Age(40, "female")
-//     expect(age.femaleInput()).toEqual(81)
-//   });
-
-//   test("this should calculate how many years a female user has left on earth", () => {
-//     let age = new Age(40, "female")
-//     expect(age.femaleYearsLeft()).toEqual(41)
-//   });
-
-//   test("this should tell female user")
-// })

@@ -42,24 +42,10 @@ export class Age {
       return noExercise
     }
     }
+  exerMerc() {
+    let mercExercise = this.exerciseInput() + this.mercuryYears()
+    return mercExercise
+  }
   }
 
-  // femaleInput() {
-  //   let female = 81
-  //   if (this.sex === "female") {
-  //     return female
-  //   }
-  // }
-  // femaleYearsLeft() {
-  //   let yearsLeft = this.femaleInput() - this.earthAge
-  //   return yearsLeft
-  //   }
-  //   mercuryFemale() {
-  //     let femercury = this.femaleYearsLeft() + this.mercuryYears()
-  //     return femercury
-  //   }
-  // }
-
-
-
-  
+ 
