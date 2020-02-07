@@ -35,7 +35,7 @@ export class Age {
 
   exerciseInput() {
     let yesExercise = 5
-    let noExercise = this.earthAge
+    let noExercise = 0
     if (this.exercise === "yes") {
       return yesExercise
     } else if (this.exercise === "no") {

@@ -39,12 +39,12 @@ describe("Age", () => {
 
   test("this should confirm users input if they do not exercise", () => {
     let age = new Age(40, "no")
-    expect(age.exerciseInput()).toEqual(40)
+    expect(age.exerciseInput()).toEqual(0)
   });
 
   test("this should show how long user will live on Mercury if they exercise", () => {
-    let age = new Age(40, "yes")
-    expect(age.exerMerc()).toEqual(171)
+    let age = new Age(40, "no")
+    expect(age.exerMerc()).toEqual(166)
   })
   })
 
