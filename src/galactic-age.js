@@ -32,17 +32,22 @@ export class Age {
     let yearsOnJupiter = parseInt(this.parseAge() / 11.86)
     return yearsOnJupiter
   }
-  femaleInput() {
-    let female = 81
-    if (this.sex === "female") {
-      return female
-    }
-  }
-  femaleYearsLeft() {
-    let yearsLeft = this.femaleInput() - this.earthAge
-    return yearsLeft
-  }
-  }
+}
+  // femaleInput() {
+  //   let female = 81
+  //   if (this.sex === "female") {
+  //     return female
+  //   }
+  // }
+  // femaleYearsLeft() {
+  //   let yearsLeft = this.femaleInput() - this.earthAge
+  //   return yearsLeft
+  //   }
+  //   mercuryFemale() {
+  //     let femercury = this.femaleYearsLeft() + this.mercuryYears()
+  //     return femercury
+  //   }
+  // }
 
 
 
