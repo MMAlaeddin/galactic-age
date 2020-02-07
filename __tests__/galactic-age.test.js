@@ -19,6 +19,6 @@ describe("Age", () => {
 
   test("this should calculate and return how old user is on Venus", () => {
     let age = new Age(40)
-    expect(age.venusYears()).toEqual(64)
+    expect(age.venusYears()).toEqual(64.51612903225806)
   })
 })

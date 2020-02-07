@@ -18,7 +18,7 @@ export class Age {
     return yearsOnMerc
   }
   venusYears() {
-    let yearsOnVenus = parseInt(this.parseAge() / .62)
+    let yearsOnVenus = parseFloat(this.parseAge() / .62)
     return yearsOnVenus
   }
   }
