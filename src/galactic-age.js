@@ -14,7 +14,7 @@ export class Age {
     }
 
   mercuryYears() {
-    let yearsOnMerc = parseInt(this.parseAge() % .24)
+    let yearsOnMerc = parseInt(this.parseAge() / .24)
     return yearsOnMerc
   }
   }
