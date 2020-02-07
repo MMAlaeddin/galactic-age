@@ -12,4 +12,11 @@ export class Age {
     let ageInput = parseInt(this.earthAge)
     return ageInput
     }
+
+  mercuryYears() {
+    let yearsOnMerc = parseInt(this.parseAge() % .24)
+    return yearsOnMerc
   }
+  }
+
+  
