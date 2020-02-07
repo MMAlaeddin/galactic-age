@@ -70,4 +70,10 @@ export class Age {
     let totalMars = totMars - this.exerciseInput()
     return (exerMars + " and you've got " + totalMars + " years left to live!")
   }
+  totalJupiter() {
+    let exerJupiter = this.exerciseInput() + this.jupiterYears()
+    let totJupiter = this.humanYears() - this.jupiterYears()
+    let totalJupiter = totJupiter - this.exerciseInput()
+    return (exerJupiter + " and you've got " + totalJupiter + " years left to live!")
+}
 }
