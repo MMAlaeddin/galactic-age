@@ -32,9 +32,14 @@ describe("Age", () => {
     expect(age.jupiterYears()).toEqual(3)
 });
   
-  test("this should confirm users exercise input", () => {
+  test("this should confirm users exercise input if they do exercise", () => {
     let age = new Age(40, "yes")
     expect(age.exerciseInput()).toEqual(5)
+  });
+
+  test("this should confirm users input if they do not exercise", () => {
+    let age = new Age(40, "no")
+    expect(age.exerciseInput()).toEqual(40)
   })
   })
 

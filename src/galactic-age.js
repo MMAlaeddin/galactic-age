@@ -35,11 +35,15 @@ export class Age {
 
   exerciseInput() {
     let yesExercise = 5
+    let noExercise = this.earthAge
     if (this.exercise === "yes") {
       return yesExercise
+    } else if (this.exercise === "no") {
+      return noExercise
+    }
     }
   }
-}
+
   // femaleInput() {
   //   let female = 81
   //   if (this.sex === "female") {
