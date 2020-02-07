@@ -41,11 +41,31 @@ export class Age {
     } else if (this.exercise === "no") {
       return noExercise
     }
-    }
-  exerMerc() {
-    let mercExercise = this.exerciseInput() + this.mercuryYears()
-    return mercExercise
   }
+  
+  humanYears() {
+    let human = 79
+    return human
+  
   }
+  remainingYears() {
+    let remain = this.humanYears() - this.earthAge
+    let totalRemain = remain + this.exerciseInput() 
+    return totalRemain
+  }
+  totalMercury() {
+    let exerMerc = this.exerciseInput() + this.earthAge + this.mercuryYears()
+    let totalMerc = this.mercuryYears() - this.remainingYears()
+    return (exerMerc + " and you've lived " + totalMerc + " years past your expected age on Earth.")
+  }
+  // exerMerc() {
+  //   let mercExercise = this.exerciseInput() + this.mercuryYears()
+  //   if (mercExercise)
+  //   // return mercExercise
+  
+  // }
 
- 
+
+  // }
+
+}

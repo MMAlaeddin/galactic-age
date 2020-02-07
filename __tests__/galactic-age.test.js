@@ -42,9 +42,9 @@ describe("Age", () => {
     expect(age.exerciseInput()).toEqual(0)
   });
 
-  test("this should show how long user will live on Mercury if they exercise", () => {
-    let age = new Age(40, "no")
-    expect(age.exerMerc()).toEqual(166)
+  test("this should show user how old they are and how long they've lived past earth years in Mercury", () => {
+    let age = new Age(40, "yes")
+    expect(age.totalMercury()).toEqual(211 + " and you've lived " + 122 + " years past your expected age on Earth.")
   })
   })
 
