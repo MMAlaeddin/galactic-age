@@ -28,8 +28,10 @@ export class Age {
   }
 
   jupiterYears() {
-    let yearsOnJupiter = parseInt(this.parseAge() / 11.86)
-    return yearsOnJupiter
+    let jupYears = parseInt(this.earthAge) / 11.86
+    return jupYears
+    // let yearsOnJupiter = parseInt(this.parseAge() / 11.86)
+    // return yearsOnJupiter
   }
   }
 
