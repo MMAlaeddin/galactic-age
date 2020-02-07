@@ -44,7 +44,7 @@ describe("Age", () => {
 
   test("this should show user how old they are and how long they've lived past earth years in Mercury", () => {
     let age = new Age(40, "yes")
-    expect(age.totalMercury()).toEqual(211 + " and you've lived " + 122 + " years past your expected age on Earth.")
+    expect(age.totalMercury()).toEqual(171 + " and you've lived " + 92 + " years past your expected age on Earth.")
   });
 
   test("this should show user how old they are and how long they've lived past earth years in Venus", () => {

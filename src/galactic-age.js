@@ -54,8 +54,8 @@ export class Age {
     return totalRemain
   }
   totalMercury() {
-    let exerMerc = this.exerciseInput() + this.earthAge + this.mercuryYears()
-    let totalMerc = this.mercuryYears() - this.remainingYears()
+    let exerMerc = this.exerciseInput() + this.mercuryYears()
+    let totalMerc = exerMerc - this.humanYears()
     return (exerMerc + " and you've lived " + totalMerc + " years past your expected age on Earth.")
   }
   totalVenus() {
