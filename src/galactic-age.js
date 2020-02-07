@@ -32,7 +32,12 @@ export class Age {
     let yearsOnJupiter = parseInt(this.parseAge() / 11.86)
     return yearsOnJupiter
   }
-
+  femaleInput() {
+    let female = 81
+    if (this.sex === "female") {
+      return female
+    }
+  }
   }
 
 

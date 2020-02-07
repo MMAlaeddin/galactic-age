@@ -29,6 +29,11 @@ describe("Age", () => {
 
   test("this should calculate and return how old user is on Jupiter", () => {
     let age = new Age(40)
-    expect(age.jupiterYears()).toEqual(3.3726812816188874)
+    expect(age.jupiterYears()).toEqual(3)
 });
+
+  test("this should confirm female input", () => {
+    let age = new Age(40, "male")
+    expect(age.femaleInput()).toEqual(81)
+  })
 })
