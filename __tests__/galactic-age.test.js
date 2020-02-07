@@ -33,7 +33,7 @@ describe("Age", () => {
 });
 
   test("this should confirm female input", () => {
-    let age = new Age(40, "male")
+    let age = new Age(40, "female")
     expect(age.femaleInput()).toEqual(81)
   })
 })
