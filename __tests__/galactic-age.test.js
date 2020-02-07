@@ -58,7 +58,7 @@ describe("Age", () => {
 });
 
 test("this should show user how old they are and how long they have left on Jupiter", () => {
-  let age = new Age(40, "yes")
-  expect(age.totalJupiter()).toEqual(8 + " and you've got " + 71 + " years left to live!")
+  let age = new Age(40, "no")
+  expect(age.totalJupiter()).toEqual(3 + " and you've got " + 66 + " years left to live!")
 });
 })
