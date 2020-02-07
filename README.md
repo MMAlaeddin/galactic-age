@@ -25,6 +25,12 @@ Ever wonder how old you'd be on Mars or other planets?  Well, this app will help
 * Behavior: Show users age Jupiter
     * Input: 40
     * Output: 3
+* Behavior: Show users age on Mercury if they also exercise
+    * Input: 40
+    * Output: 69
+* Behavior: Show users age Mercury if they also exercise and also show how many years they've lived past their life expectancy with earth years. (repeat for all other planets)
+    * Input: 40
+    * Output: "171 and you've lived 92 years past your expected age"
 
 ## Setup/Installation Requirements
 
