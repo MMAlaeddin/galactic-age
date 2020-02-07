@@ -63,6 +63,11 @@ export class Age {
     let totVenus = this.humanYears() - this.venusYears()
     let totalVenus = totVenus - this.exerciseInput()
     return (exerVenus + " and you've got " + totalVenus + " years left to live!")
-
 }
+  totalMars() {
+    let exerMars = this.exerciseInput() + this.marsYears()
+    let totMars = this.humanYears() - this.marsYears()
+    let totalMars = totMars - this.exerciseInput()
+    return (exerMars + " and you've got " + totalMars + " years left to live!")
+  }
 }

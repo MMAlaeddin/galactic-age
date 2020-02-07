@@ -50,5 +50,10 @@ describe("Age", () => {
   test("this should show user how old they are and how long they've lived past earth years in Venus", () => {
     let age = new Age(40, "yes")
     expect(age.totalVenus()).toEqual(69 + " and you've got " + 10 + " years left to live!")
-  })
+  });
+
+  test("this should show user how old they are and how long they have left on Mars", () => {
+    let age = new Age(40, "yes")
+    expect(age.totalMars()).toEqual(26 + " and you've got " + 53 + " years left to live!")
+})
 })
