@@ -38,6 +38,10 @@ export class Age {
       return female
     }
   }
+  femaleYearsLeft() {
+    let yearsLeft = this.femaleInput() - this.earthAge
+    return yearsLeft
+  }
   }
 
 

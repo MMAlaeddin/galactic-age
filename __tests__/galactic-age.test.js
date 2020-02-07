@@ -35,5 +35,10 @@ describe("Age", () => {
   test("this should confirm female input", () => {
     let age = new Age(40, "female")
     expect(age.femaleInput()).toEqual(81)
+  });
+
+  test("this should calculate how many years a female user has left on earth", () => {
+    let age = new Age(40, "female")
+    expect(age.femaleYearsLeft()).toEqual(41)
   })
 })
