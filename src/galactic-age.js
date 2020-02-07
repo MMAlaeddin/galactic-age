@@ -1,7 +1,7 @@
 export class Age {
-  constructor(earthAge, sex) {
+  constructor(earthAge, exercise) {
     this.earthAge = earthAge,
-    this.sex = sex
+    this.exercise = exercise
   }
 
   checkAgeInput() {
@@ -31,6 +31,13 @@ export class Age {
   jupiterYears() {
     let yearsOnJupiter = parseInt(this.parseAge() / 11.86)
     return yearsOnJupiter
+  }
+
+  exerciseInput() {
+    let yesExercise = 5
+    if (this.exercise === "yes") {
+      return yesExercise
+    }
   }
 }
   // femaleInput() {
