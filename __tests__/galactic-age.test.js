@@ -44,7 +44,7 @@ describe("Age", () => {
 
   test("this should show how long user will live on Mercury if they exercise", () => {
     let age = new Age(40, "yes")
-    expect(age.exerMerc()).toEqual(45)
+    expect(age.exerMerc()).toEqual(171)
   })
   })
 
