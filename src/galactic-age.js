@@ -26,6 +26,11 @@ export class Age {
     let yearsOnMars = parseInt(this.parseAge() / 1.88)
     return yearsOnMars
   }
+
+  jupiterYears() {
+    let yearsOnJupiter = parseInt(this.parseAge() / 11.86)
+    return yearsOnJupiter
+  }
   }
 
 
