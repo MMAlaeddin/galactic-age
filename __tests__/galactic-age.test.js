@@ -30,7 +30,7 @@ describe("Age", () => {
   test("this should calculate and return how old user is on Jupiter", () => {
     let age = new Age(40)
     expect(age.jupiterYears()).toEqual(3)
-});
+  });
   
   test("this should confirm users exercise input if they do exercise", () => {
     let age = new Age(40, "yes")
@@ -55,10 +55,15 @@ describe("Age", () => {
   test("this should show user how old they are and how long they have left on Mars", () => {
     let age = new Age(40, "yes")
     expect(age.totalMars()).toEqual(26 + " and you've got " + 53 + " years left to live!")
-});
+  });
 
-test("this should show user how old they are and how long they have left on Jupiter", () => {
-  let age = new Age(40, "no")
-  expect(age.totalJupiter()).toEqual(3 + " and you've got " + 76 + " years left to live!")
-});
-})
+  test("this should show user how old they are and how long they have left on Jupiter", () => {
+    let age = new Age(40, "no")
+    expect(age.totalJupiter()).toEqual(3 + " and you've got " + 76 + " years left to live!")
+  });
+
+  test("this should show user how old they are and how long they have left on Venus", () => {
+    let age = new Age(40, "no")
+    expect(age.totalVenus()).toEqual(64 + " and you've got " + 15 + " years left to live!")
+  });
+  });
