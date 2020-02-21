@@ -76,25 +76,18 @@ totalJupiter() {
   let totalJupiter = totJupiter - this.exerciseInput()
   return (exerJupiter + " and you've got " + totalJupiter + " years left to live!")
 }
-
-// expectMars() {
-//   let exerMars = this.exerciseInput() + this.marsYears()
-//   let totalMars = exerMars - this.humanYears()
-//   return (exerMars + " and you've lived " + totalMars + " years past your expected age on Earth.")
-// }
-
 expectJupiter() {
   let exerJup = this.exerciseInput() + this.jupiterYears()
   let totalJup = this.humanYears() - exerJup
   return (exerJup + " and you've lived " + totalJup + " years past your expected age on Earth.")
 }
 
-// pastVenus() {
-//   let totalLife = this.humanYears() / this.yearsOnMerc
-//   let mercExpect = totalLife - this.mercuryYears() 
-//   return ("you've lived " + mercExpect + "past your expectancy!")
+expectMars() {
+  let exerMars = this.exerciseInput() + this.marsYears()
+  let totalMars = this.humanYears() - exerMars
+  return (exerMars + " and you've lived " + totalMars + " years past your expected age on Earth.")
+}
 
-// }
 
 
 }

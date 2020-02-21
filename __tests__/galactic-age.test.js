@@ -71,6 +71,10 @@ describe("Age", () => {
     let age = new Age(40, "no")
     expect(age.expectJupiter()).toEqual(3 + " and you've lived " + 76 + " years past your expected age on Earth.")
   })
-    
 
+  test("this should show life expectancy on Mars", () => {
+    let age = new Age(40, "no")
+    expect(age.expectMars()).toEqual(21 + " and you've lived " + 58 + " years past your expected age on Earth.")
+  
+  });
   });
