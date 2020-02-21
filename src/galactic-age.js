@@ -46,7 +46,6 @@ exerciseInput() {
 humanYears() {
   let human = 79
   return human
-
 }
 remainingYears() {
   let remain = this.humanYears() - this.earthAge
@@ -81,18 +80,15 @@ expectJupiter() {
   let totalJup = this.humanYears() - exerJup
   return (exerJup + " and you've lived " + totalJup + " years past your expected age on Earth.")
 }
-
 expectMars() {
   let exerMars = this.exerciseInput() + this.marsYears()
   let totalMars = this.humanYears() - exerMars
   return (exerMars + " and you've lived " + totalMars + " years past your expected age on Earth.")
 }
-
 expectVenus() {
   let exerVenus = this.exerciseInput() + this.venusYears()
   let totalVenus = this.humanYears() - exerVenus
   return (exerVenus + " and you've lived " + totalVenus + " years past your expected age on Earth.")
-
 }
 
 }
