@@ -88,6 +88,11 @@ expectMars() {
   return (exerMars + " and you've lived " + totalMars + " years past your expected age on Earth.")
 }
 
+expectVenus() {
+  let exerVenus = this.exerciseInput() + this.venusYears()
+  let totalVenus = this.humanYears() - exerVenus
+  return (exerVenus + " and you've lived " + totalVenus + " years past your expected age on Earth.")
 
+}
 
 }
