@@ -22,17 +22,14 @@ venusYears() {
   let yearsOnVenus = parseInt(this.parseAge() / .62)
   return yearsOnVenus
 }
-
 marsYears() {
   let yearsOnMars = parseInt(this.parseAge() / 1.88)
   return yearsOnMars
 }
-
 jupiterYears() {
   let yearsOnJupiter = parseInt(this.parseAge() / 11.86)
   return yearsOnJupiter
 }
-
 exerciseInput() {
   let yesExercise = 5
   let noExercise = 0
@@ -42,7 +39,6 @@ exerciseInput() {
     return noExercise
   }
 }
-
 humanYears() {
   let human = 79
   return human
