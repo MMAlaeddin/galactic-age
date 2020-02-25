@@ -76,4 +76,10 @@ describe("Age", () => {
     let age = new Age(40, "no")
     expect(age.expectVenus()).toEqual(64 + " and you've lived " + 15 + " years past your expected age on Earth.")
   });
+
+  test("this should show how many years left to live on Mercury", () => {
+    let age = new Age (40, "no")
+    expect(age.leftOnMerc()).toEqual("you have " + 3.5 + " left to live on Mercury")
+  });
+
 });

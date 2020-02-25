@@ -90,4 +90,11 @@ expectVenus() {
   let totalVenus = this.humanYears() - exerVenus
   return (exerVenus + " and you've lived " + totalVenus + " years past your expected age on Earth.")
 }
+
+leftOnMerc() {
+  let leftOnEarth = this.humanYears() - this.parseAge()
+  let turnToMerc = leftOnEarth / .24 
+  let finalMercOutput = this.mercuryYears() - turnToMerc
+  return ("you have " + finalMercOutput + " left to live on Mercury")
+}
 }
