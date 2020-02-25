@@ -3,32 +3,32 @@ import { Age } from "../src/galactic-age.js";
 describe("Age", () => {
 
   test("this should confirm earth age input", () => {
-    let age = new Age("40");
+    let age = new Age("40", "no");
     expect(age.checkAgeInput()).toEqual(true)
   });
 
   test("this should confirm input age is parseInt", () => {
-    let age = new Age(40)
+    let age = new Age(40, "no")
     expect(age.parseAge()).toEqual(40)
   });
 
   test("this should calculate and return how old user is on Mercury", () => {
-    let age = new Age(40)
+    let age = new Age(40, "no")
     expect(age.mercuryYears()).toEqual(166)
   });
 
   test("this should calculate and return how old user is on Venus", () => {
-    let age = new Age(40)
+    let age = new Age(40, "no")
     expect(age.venusYears()).toEqual(64)
   });
 
   test("this should calculate and return how old user is on Mars", () => {
-    let age = new Age(40)
+    let age = new Age(40, "no")
     expect(age.marsYears()).toEqual(21)
   });
 
   test("this should calculate and return how old user is on Jupiter", () => {
-    let age = new Age(40)
+    let age = new Age(40, "no")
     expect(age.jupiterYears()).toEqual(3)
   });
   
@@ -81,5 +81,4 @@ describe("Age", () => {
     let age = new Age (40, "no")
     expect(age.leftOnMerc()).toEqual("you have " + 3.5 + " left to live on Mercury")
   });
-
 });
